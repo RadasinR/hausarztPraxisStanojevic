@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* util */
+.nowrap {
+    white-space: nowrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+   /*  background-color: rgb(150, 167, 201);
+    background-image: radial-gradient(rgb(150, 167, 201), hsl(221, 18%, 45%)); */
+
+}
+
+header,footer {
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+header {
+    top: 0;
+}
+
+ h1 {
+    order: -1;
+    width: 100%;
+    text-align: center;
+   /*  background-color: var(--CLAYWHITE); */
+    color: var(--TEXTCOLOR);
+  
+}
+
+header nav {
+   box-shadow: var(--SHADOW);
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a, header nav a:visited {
+    color: var(--TEXTCOLOR);
+    padding: 1rem;
+}
+
+header nav a:hover, header nav a:focus {
+    color: rgb(40, 101, 148);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* bottom: 0; */
+ 
+    text-align: center;
+    z-index: 0;
+   
+}
+
+footer a:hover, footer a:focus {
+    filter: brightness(120%);
+}
+
+footer a:active {
+    color: firebrick;
+}

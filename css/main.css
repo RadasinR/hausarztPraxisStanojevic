@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARS */
+:root {
+    /* COLORS */
+    /* clay */
+    --CLAYWHITE: #edede9;
+    --CLAYGRAY: #d6ccc2;
+    --CLAYWHITE2: #f5ebe0;
+    --CLAYGREY: #e3d5ca;
+    --CLAYREDGREY: #d5bdaf;
+
+
+    --BCPAPER:  hsl(37, 100%, 85%);
+    --BGDOC: antiquewhite;
+    --TEXTCOLOR: hsl(0, 25%, 26%);
+
+    /* main size */
+    --MAINWIDTH: 85%;
+    --PADDING: 0.5rem;
+    --FS-S: 0.7rem;
+    --FS-XL: 1.7rem;
+    --FS-M: 1.1rem;
+    --FS-L: 1.5rem;
+    /* general */
+    --SHADOW: 3px 3px 4px #333;
+   
+}
+
+html {
+    
+    background-color: var(--BGDOC);
+    background-image: linear-gradient(var(--BGDOC),hsl(34, 57%, 65%));
+    scroll-behavior: smooth;
+    font-family:"Roboto", sans-serif;
+  
+}
+
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+   
+}
+
+main {
+ 
+   
+    border-top: 6px double #333; 
+    border-bottom: 6px double #333; 
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-radius:10px 10px 10px 10px;
+    background-color: var(--BCPAPER);
+    background-image: radial-gradient(hsl(37, 100%, 85%),hsl(37, 100%, 75%), hsl(37, 100%, 79%));
+    box-shadow: var(--SHADOW);
+   
+}
+@media screen and (min-width: 375px) {
+    main {
+         width: 100%;
+         font-size: var(--FS-S);
+    }
+}
+
+@media screen and (min-width: 768px) {
+   main { 
+        width: var(--MAINWIDTH);
+        font-size: var(--FS-XL);
+    }
+}

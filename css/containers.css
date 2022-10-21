@@ -1,0 +1,163 @@
+
+
+
+.sticker-container {
+    background-color: var(--BGDOC);
+    border: 2px solid #333;
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+}
+
+.letter-frame {
+    background-color: papayawhip;
+    border: 20px solid white;
+    border-radius: 7px; 
+    outline: 0.5px solid #333;
+    white-space: wrap;
+    text-align: center;
+  }
+  .letter-frame-addres {
+    background-color: papayawhip;
+    border: 20px solid white;
+    border-radius: 7px; 
+    outline: 0.5px solid #333;
+    white-space: wrap;
+    text-align: left;
+  }
+
+/* menu area */
+
+.menu {
+    width: var(--MAINWIDTH);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    gap: 5px;
+
+}
+
+
+
+.paper {
+
+    background-color:var(--CLAYWHITE);
+    background-image: radial-gradient(var(--CLAYWHITE), var(--CLAYREDGREY));
+   
+    border: 2px solid var(--TEXTCOLOR);
+    box-shadow: var(--SHADOW);
+    border-radius: 5px;
+}
+
+.box {
+
+    background-color: hsl(48, 64%, 85%);
+    background-image:  linear-gradient(hsl(48, 87%, 89%), var(--BCPAPER));
+  
+    width: min(10rem, 20vw);
+    height: min(55px, 5.7vh);
+    color: var(--TEXTCOLOR);
+    font-size: min(1.5rem, 3vw);
+    white-space: wrap;
+   
+    font-weight: 600;
+    border: 2px solid rgb(41, 36, 30);
+    border-bottom: 0px;
+    border-radius: 3px; 
+    padding-top: 0.7rem;
+    border-radius: 6px; 
+    z-index: 1;
+
+}
+
+
+
+.box:hover, .box:focus {
+ 
+  filter: brightness(120%); 
+
+  text-decoration: none;
+  
+  transition-property: filter font-weight;
+  transition-duration: 1s;
+
+   
+}
+
+
+
+/* end of menu area */
+
+
+/* cover image */
+.image {
+    
+    height: 50vh;
+    margin: 1rem; 
+    background-color: antiquewhite;
+    background-image: url("/images/doctor-g74695b35a_1920.jpg");
+    background-position: center center;
+    background-size:contain;
+    border: 10px solid whitesmoke;
+   
+}
+
+/* end of cover image */
+/* uber area */
+.buttonsbox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: hsl(48, 64%, 85%);
+    background-image: linear-gradient(hsl(48, 87%, 89%), var(--BCPAPER));
+    
+    width: max(10rem, 20vw);
+    height: max(55px, 5.7vh);
+    font-size: min(1.5rem, 3vw);
+    white-space: wrap;
+    color: var(--TEXTCOLOR);
+    font-weight: 600;
+    border: 2px solid rgb(41, 36, 30);
+    border-top: 2px dashed gray;
+    border-radius: 3px; 
+    border-radius: 6px; 
+    z-index: 1;
+
+}
+
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    35% {transform: rotate(2deg);}
+    60% {transform: rotate(-2deg);}
+   80% { transform: rotate(1deg);  }
+   85% { transform: rotate(3deg); ; transform: scaleY(1.1); }
+   95% { transform: rotate(-3deg); transform: scaleX(0.86);}
+  100% { transform: rotate(0deg); transform: scaleX(1); transform: scaleY(1);}
+}
+
+.buttonsbox {
+    animation: wiggle 5s infinite;
+}
+
+
+
+/* end of uber area */
+
+@media screen and (min-width: 375px) {
+    main {
+         width: 100%;
+         font-size: var(--FS-S);
+    }
+}
+
+@media screen and (min-width: 768px) {
+   main { 
+        width: var(--MAINWIDTH);
+        font-size: var(--FS-XL);
+    }
+}
