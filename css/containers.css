@@ -96,7 +96,7 @@
     height: 50vh;
     margin: 1rem; 
     /* background-color: antiquewhite; */
-    background-image: url("/images/doctor-g74695b35a_1920.jpg");
+    background-image: url("images/doctor-g74695b35a_1920.jpg");
     background-position: center center;
     background-size:contain;
     border: 10px solid whitesmoke;
