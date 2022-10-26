@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* vars */
+:root {
+    /* COLORS */
+    /* clay */
+    --CLAYWHITE: #edede9;
+    --CLAYGRAY: #d6ccc2;
+    --CLAYWHITE2: #f5ebe0;
+    --CLAYGREY: #e3d5ca;
+    --CLAYREDGREY: #d5bdaf;
+
+
+    --BCPAPER:  hsl(37, 100%, 85%);
+    --BGDOC: antiquewhite;
+    --TEXTCOLOR: hsl(0, 25%, 26%);
+    --BORDERCOLOR: rgba(51, 51, 51, 0.678);
+    --FOLDERCOLOR1: hsl(37, 100%, 85%),hsl(37, 100%, 75%);
+    --FOLDERCOLOR2: hsl(37, 100%, 79%);
+    --TABLECOLOR: hsl(49, 66%, 80%);
+    --TABLEHEADCOLOR: hsla(0, 29%, 17%, 0.808);
+    /* main size */
+    --MAINWIDTH: 85%;
+    --MAINWIDTH-S: 100%;
+    --PADDING: 0.5rem;
+    --FS-S: 0.7rem;
+    --FS-XL: 1.7rem;
+    --FS-M: 1.1rem;
+    --FS-L: 1.5rem;
+    /* general */
+    --SCREEN-S: 260px;
+    --SHADOW: 3px 3px 4px #333;
+   
+}
+
+/* Blocks */
+
+html {
+    align-items: center;
+    background-color: var(--BGDOC);
+    background-image: linear-gradient(var(--BGDOC),hsl(34, 57%, 65%));
+    display: flex;
+    flex-flow: column wrap;
+    font-family:"Nunito", sans-serif;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+body {
+   
+}
+
+.menu {
+
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.seperator {
+    background-color: var(--BCPAPER);
+    background-image: linear-gradient(var(--FOLDERCOLOR1), var(--FOLDERCOLOR2));
+    border-left: 1px solid var(--BORDERCOLOR);
+    border-radius: 20px 20px 0 0;
+    border-right: 1px solid var(--BORDERCOLOR);
+    border-top: 5px double var(--BORDERCOLOR);
+    height: 50px;
+    text-align: center;
+    width: 100px;
+}
+
+.mark {
+
+    background-color: hsl(48, 64%, 85%);
+    background-image:  linear-gradient(hsl(48, 87%, 89%), var(--BCPAPER));
+    border-radius: 5px;
+    border: 2px solid #333;
+    color: var(--TEXTCOLOR);
+    text-decoration: none;
+}
+
+.mark:hover, .mark:focus {
+    filter: brightness(110%);
+    transition-duration: 1s;
+    transition-property: filter;
+}
+
+.folder {
+    align-content: center;
+    align-items: center;
+    background-color: var(--BCPAPER);
+    background-image: linear-gradient(var(--FOLDERCOLOR1), var(--FOLDERCOLOR2));
+    border-bottom: 6px double var(--BORDERCOLOR); 
+    border-left: 1px solid var(--BORDERCOLOR);
+    border-radius:10px 10px 10px 10px;
+    border-right: 1px solid var(--BORDERCOLOR);
+    border-top: 6px double var(--BORDERCOLOR); 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    z-index: 2;
+}
+
+.sticker {
+    background-color: var(--BGDOC);
+    background-image: radial-gradient(var(--BGDOC), var(--CLAYWHITE));
+    border: 2px solid var(--BORDERCOLOR);
+    border-left: none;
+    border-radius: 20px;
+    border-right: none;
+    
+    margin: var(--FS-M);
+    padding: var(--PADDING);
+    text-align: center;
+}
+
+.highlight {
+    color: var(--TEXTCOLOR);
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507); 
+}
+.image {
+    background-image: url("../images/doctor-g74695b35a_1920.jpg");
+    background-position: center center;
+    background-size:contain;
+    border: 10px solid whitesmoke;
+    height: 40vh;
+    margin: var(--PADDING);
+    padding: var(--PADDING);
+    width: 80%;
+}
+.line {
+    background-color:  var(--TEXTCOLOR);
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0);
+    height: 2px;
+    width: 100%;
+    
+}
+.info {
+    align-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-between;
+    padding: 2rem;
+}
+
+.letter-frame {
+    background-color: var(--TABLECOLOR);
+    border-collapse: collapse;
+    border-radius: 7px; 
+    border: 20px solid white;
+    outline: 0.5px solid #333;
+    text-align: center;
+    white-space: wrap;
+  }
+
+  .letter-frame-addres {
+    background-color: var(--TABLECOLOR);
+    border-radius: 7px; 
+    border: 20px solid white;
+    outline: 0.5px solid #333;
+    text-align: left;
+    white-space: wrap;
+  }
+
+.table {
+    border-collapse: collapse;
+    padding: var(--PADDING); 
+}
+
+.headtable {
+    background-color: var(--TABLEHEADCOLOR);
+    border-radius: 15px 15px 0 0;
+    border: 1px solid var(--BORDERCOLOR);
+    color: var(--CLAYREDGREY);
+}
+
+td, th, tr, caption {
+    border-bottom: groove 2px black;
+    padding: var(--PADDING); 
+}
+
+
+tr:hover {
+    background-color:hsl(0, 25%, 27%);
+    color: rgb(252, 232, 203);
+    transition-duration: 1.5s;
+    transition-property: background-color color;
+}
+
+address {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding: 2rem;
+}
+
+address:hover {
+    background-color:hsl(0, 25%, 27%);
+    color: rgb(252, 232, 203);
+    transition-duration: 1.5s;
+    transition-property: background-color color font-size;
+}
+
+.additionalInfo {
+    color: var(--TEXTCOLOR);
+    filter: contrast(110%);
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left:var(--PADDING);
+    text-align: center;
+}
+
+footer {
+    width: 90%;
+}
+footer p {
+    background-color: #333;
+    border-radius: 7px; 
+    color: var(--CLAYWHITE);
+    width: 70%;
+}
+
+/* small Screeen */
+
+@media screen and (min-width: 280px) {
+    .menu {
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .mark {
+        font-size: var(--FS-M);
+        width: auto;
+        height: 40px;
+        padding: var(--PADDING);
+    }
+
+   .image {
+    height: 200px;
+    width: 90%;
+   }
+
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        width: 95%;
+        font-size: var(--FS-XL);
+    }
+    .mark {
+        font-size: var(--FS-XL);
+        text-align: center;
+        height: 60px;
+    }
+    .image {
+        height: 50vh;
+        width: 90vw;
+    }
+    .line {
+        height: 4px;
+        width: 98%;
+    }
+    .info-details {
+        width: 90%;
+        /* text-align: center; */
+    }
+    .additionalInfo {
+        font-size: var(--FS-XL);
+    }
+}
