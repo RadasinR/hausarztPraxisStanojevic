@@ -59,6 +59,25 @@ body {
         filter: brightness(120%) ;
        
     }
+    @media screen and (min-width: 280px) {
+        body {
+            font-size: var(--FS-M)
+        }
+        .paper {
+            width: 100vw;
+        }
+
+        .listStyle {
+          word-wrap: break-word;
+            
+        }
+        
+        h2 {
+            font-size: var(--FS-M);
+            margin: 0;
+        }
+       
+    }
     @media screen and (min-width: 370px) {
         body {
             margin-top: 0.1rem;
@@ -76,10 +95,10 @@ body {
         }
 
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 760px) {
         
         body {
-            height: 100vh;
+            height: 100%;
             font-size: var(--FS-XL);
         }
         h2 {
