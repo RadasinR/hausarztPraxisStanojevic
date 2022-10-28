@@ -36,8 +36,18 @@
     border: 5px double black;
     border-radius: 5%;
 }
+.sticker-container {
+      flex-grow: 0.5;
+      flex-shrink: 2;  
+}
 
-
+@media screen and (orientation: landscape) {
+    .sticker-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;   
+    }
+}
 @media screen and (min-width: 576px) {
     main {
         justify-content: center;
@@ -105,4 +115,6 @@
         font-size: 1.25rem;
 
     }
+
+    
 }
