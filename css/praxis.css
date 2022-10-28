@@ -119,4 +119,6 @@ body {
             height: 100vh;
             margin-bottom: 0;
         }
-    }
+        h2 {
+            font-size: 30rem;
+        }
