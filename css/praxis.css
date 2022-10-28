@@ -116,6 +116,7 @@ body {
 
     @media screen and (min-width: 900px) {
         body {
-            height: 300vh;
+            height: 100vh;
+            margin-bottom: 0;
         }
     }
