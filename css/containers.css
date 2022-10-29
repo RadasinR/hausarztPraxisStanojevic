@@ -116,7 +116,7 @@
     
     width: max(10rem, 20vw);
     height: max(55px, 5.7vh);
-    font-size: min(1.5rem, 3vw);
+    font-size: min(1.5rem, 6vw);
     white-space: wrap;
     color: var(--TEXTCOLOR);
     font-weight: 600;
