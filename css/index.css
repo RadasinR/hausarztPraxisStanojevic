@@ -58,7 +58,7 @@ body {
 }
 
 .menu {
-
+    justify-content: flex-end;
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -255,7 +255,7 @@ footer p {
         padding: var(--PADDING);
     }
     .mark:last-child {
-        height: 80px;
+        height: 60px;
     }
    .image {
     height: 200px;
