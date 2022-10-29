@@ -251,10 +251,12 @@ footer p {
     .mark {
         font-size: var(--FS-M);
         width: auto;
-        height: 80px;
+        height: 40px;
         padding: var(--PADDING);
     }
-
+    .mark:last-child {
+        height: 80px;
+    }
    .image {
     height: 200px;
     width: 90%;
