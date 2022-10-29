@@ -251,7 +251,7 @@ footer p {
     .mark {
         font-size: var(--FS-M);
         width: auto;
-        height: 40px;
+        height: 60px;
         padding: var(--PADDING);
     }
 
