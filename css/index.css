@@ -58,8 +58,8 @@ body {
 }
 
 .menu {
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
