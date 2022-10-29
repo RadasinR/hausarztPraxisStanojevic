@@ -30,6 +30,7 @@
     --MAINWIDTH: 85%;
     --MAINWIDTH-S: 100%;
     --PADDING: 0.5rem;
+    --FS-SS: 0.9rem;
     --FS-S: 0.7rem;
     --FS-XL: 1.7rem;
     --FS-M: 1.1rem;
@@ -249,14 +250,12 @@ footer p {
     }
 
     .mark {
-        font-size: var(--FS-S);
+        font-size: var(--FS-SS);
         width: auto;
         height: 40px;
         padding: var(--PADDING);
     }
-    .mark:last-child {
-        height: 60px;
-    }
+  
    .image {
     height: 200px;
     width: 90%;
