@@ -198,7 +198,7 @@ body {
     color: rgb(252, 232, 203);
     transform: scale(1.2, 1.2);
     transition-duration: 1.5s;
-    transition-property: filter color;
+    transition-property: filter color transform;
 }
 
 td, th, tr, caption {
