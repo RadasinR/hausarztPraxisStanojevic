@@ -41,6 +41,10 @@
       flex-shrink: 2;  
 }
 
+footer {
+    flex-flow: column;
+    gap: 10px;
+}
 @media screen and (orientation: landscape) {
     .sticker-container {
         display:flex;

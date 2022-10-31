@@ -116,7 +116,7 @@
     
     width: max(10rem, 20vw);
     height: max(55px, 5.7vh);
-    font-size: min(1.5rem, 6vw);
+    font-size: min(1.5rem, 3vw);
     white-space: wrap;
     color: var(--TEXTCOLOR);
     font-weight: 600;
@@ -148,10 +148,16 @@
 
 /* end of uber area */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: var(280px)) {
     main {
          width: 100%;
          font-size: var(--FS-S);
+    }
+    
+   
+
+    .image {
+        height: 250px;
     }
 }
 
@@ -159,5 +165,8 @@
    main { 
         width: var(--MAINWIDTH);
         font-size: var(--FS-XL);
+    }
+    .image {
+        height: 50vh;
     }
 }

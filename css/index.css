@@ -17,7 +17,7 @@
     --CLAYGREY: #e3d5ca;
     --CLAYREDGREY: #d5bdaf;
 
-
+    
     --BCPAPER:  hsl(37, 100%, 85%);
     --BGDOC: antiquewhite;
     --TEXTCOLOR: hsl(0, 25%, 26%);
@@ -30,7 +30,6 @@
     --MAINWIDTH: 85%;
     --MAINWIDTH-S: 100%;
     --PADDING: 0.5rem;
-    --FS-SS: 0.9rem;
     --FS-S: 0.7rem;
     --FS-XL: 1.7rem;
     --FS-M: 1.1rem;
@@ -59,8 +58,8 @@ body {
 }
 
 .menu {
-    justify-content: flex-start;
-    align-items: flex-end;
+
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
@@ -94,6 +93,10 @@ body {
     filter: brightness(110%);
     transition-duration: 1s;
     transition-property: filter;
+}
+
+.mark:active {
+    color: firebrick;
 }
 
 .folder {
@@ -185,15 +188,14 @@ body {
 
 .headtable {
     background-color: var(--TABLEHEADCOLOR);
-    border-radius: 15px 15px 0 0;
     border: 1px solid var(--BORDERCOLOR);
     color: var(--CLAYREDGREY);
 }
 .headtable:hover {
-    filter: hue-rotate(180deg);
+    filter: brightness(125%);
     color: rgb(252, 232, 203);
-    transition-duration: 1.5s;
-    transition-property: background-color color;
+    transition-duration: 0.5s;
+    transition-property: filter color;
 }
 
 td, th, tr, caption {
@@ -250,12 +252,12 @@ footer p {
     }
 
     .mark {
-        font-size: var(--FS-SS);
+        font-size: var(--FS-M);
         width: auto;
         height: 40px;
         padding: var(--PADDING);
     }
-  
+
    .image {
     height: 200px;
     width: 90%;

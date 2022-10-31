@@ -45,7 +45,7 @@ h1 {
     margin-top: 4rem;
     margin-bottom: 4rem;
     text-align: center;
-   
+    
    
 }
 
@@ -54,14 +54,48 @@ h1 p1 {
     text-decoration: underline;
     grid-column-start: 1;
     grid-column-end: 3;
-    
 }
+
 
 h1 .line {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
+@media screen and (min-width: 280px) {
+    body {
+        font-size: var(--FS-M);
+    }
+    main {
+        margin-left: 1rem;
+        width: 400px;
+    }
+    
+    h1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;    
+        width: 65%;
+        font-size: var(--FS-M);
+        margin-left: 50px;
+    }
+    h1 p {
+        width: 100%;
+    }
+    h1 p2, h1 p3 {
+        font-size: var(--FS-S);
+    }
+    h2 {
+        text-align: center;
+        font-size: var(--FS-M);
+    }
+    table, td, tr {
+        font-size: var(--FS-M);
+    }
+    table {
+        margin-left: 2rem;
+    }
+}
 
 
 /* end of header */
@@ -85,6 +119,7 @@ h2 {
     color:  var(--TEXTCOLOR);
     text-transform: uppercase;
 }
+
 
 table {
 
@@ -150,7 +185,7 @@ footer {
     
  }
 
- @media screen and (min-width: 375px) {
+ @media screen and (min-width: var(--SCREEN-S)) {
     header {
          
          font-size: var(--FS-S);

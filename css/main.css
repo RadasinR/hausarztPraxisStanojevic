@@ -24,12 +24,14 @@
 
     /* main size */
     --MAINWIDTH: 85%;
+    --MAINWIDTH-S: 100%;
     --PADDING: 0.5rem;
     --FS-S: 0.7rem;
     --FS-XL: 1.7rem;
     --FS-M: 1.1rem;
     --FS-L: 1.5rem;
     /* general */
+    --SCREEN-S: 260px;
     --SHADOW: 3px 3px 4px #333;
    
 }
@@ -48,6 +50,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
@@ -69,7 +72,7 @@ main {
 }
 @media screen and (min-width: 375px) {
     main {
-         width: 100%;
+         width: var(--MAINWIDTH-S);
          font-size: var(--FS-S);
     }
 }
