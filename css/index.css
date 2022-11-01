@@ -207,10 +207,11 @@ td, th, tr, caption {
 
 
 tr:hover {
+    filter: drop-shadow(6px 6px 10px #333);
     background-color:hsl(0, 25%, 27%);
     color: rgb(252, 232, 203);
     transition-duration: 1.5s;
-    transition-property: background-color color;
+    transition-property: all;
 }
 
 address {
