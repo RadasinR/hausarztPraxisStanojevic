@@ -194,11 +194,10 @@ body {
     color: var(--CLAYWHITE2);
 }
 .headtable:hover {
-    filter: brightness(125%);
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
     color: rgb(252, 232, 203);
-    transform: scale(1.00, 1.00);
     transition-duration: 1.5s;
-    transition-property: filter color transform;
+    transition-property: filter, color;
 }
 
 td, th, tr, caption {
