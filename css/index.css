@@ -210,8 +210,9 @@ tr:hover {
     filter: drop-shadow(6px 6px 10px #333);
     background-color:hsl(0, 25%, 27%);
     color: rgb(252, 232, 203);
-    transition-duration: 1.5s;
-    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 1.0s, 0.5s, 0.5s;
+    transition-property: filter, background-color, color;
 }
 
 address {
