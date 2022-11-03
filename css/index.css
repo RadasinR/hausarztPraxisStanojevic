@@ -165,11 +165,11 @@ body {
 }
 
 .letter-frame {
-    background-color: var(--TABLECOLOR);
+    /* background-color: var(--TABLECOLOR); */
     border-collapse: collapse;
-    border-radius: 7px; 
     border: 20px solid white;
     outline: 0.5px solid #333;
+    border-radius: 7px; 
     text-align: center;
   }
 
