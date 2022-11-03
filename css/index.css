@@ -168,7 +168,7 @@ body {
     background-color: var(--TABLECOLOR);
     border-collapse: collapse;
     border: 20px solid white;
-    perspective: 5x;
+    perspective: 5px;
     outline: 0.5px solid #333;
     border-radius: 7px 7px 7px 7px; 
     text-align: center;
@@ -176,7 +176,7 @@ body {
 
   .letter-frame-addres {
     background-color: var(--TABLECOLOR);
-    perspective: 5x;
+    perspective: 5px;
     border-radius: 7px; 
     border: 20px solid white;
     outline: 0.5px solid #333;
