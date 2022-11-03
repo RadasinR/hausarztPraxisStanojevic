@@ -184,8 +184,8 @@ body {
     white-space: wrap;
   }
 
-.table {
-    border-collapse: collapse;
+table {
+    border-radius: 7px;
     padding: var(--PADDING); 
 }
 
