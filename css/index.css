@@ -165,7 +165,7 @@ body {
 }
 
 .letter-frame {
-    /* background-color: var(--TABLECOLOR); */
+    background-color: var(--TABLECOLOR);
     border-collapse: collapse;
     border: 20px solid white;
     outline: 0.5px solid #333;
