@@ -168,7 +168,7 @@ body {
     background-color: var(--TABLECOLOR);
     border-collapse: collapse;
     border: 20px solid white;
-    perspective: 1px;
+    perspective: 5x;
     outline: 0.5px solid #333;
     border-radius: 7px 7px 7px 7px; 
     text-align: center;
@@ -176,6 +176,7 @@ body {
 
   .letter-frame-addres {
     background-color: var(--TABLECOLOR);
+    perspective: 5x;
     border-radius: 7px; 
     border: 20px solid white;
     outline: 0.5px solid #333;
@@ -222,10 +223,12 @@ address {
 }
 
 address:hover {
+    filter: drop-shadow(6px 6px 10px #333);
     background-color:hsl(0, 25%, 27%);
     color: rgb(252, 232, 203);
     transition-duration: 1.5s;
-    transition-property: background-color color font-size;
+    transition-property: background-color, color, filter;
+    
 }
 
 .additionalInfo {
