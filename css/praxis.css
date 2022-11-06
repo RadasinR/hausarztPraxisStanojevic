@@ -44,7 +44,6 @@ body {
     a:any-link {
         padding: 0.1rem;
         margin: 0.1rem;
-        font-size: var(--FS-XL);
         text-decoration: none;
         color: var(--TEXTCOLOR);
         border-radius: 5px;
