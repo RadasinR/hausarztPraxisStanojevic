@@ -26,6 +26,7 @@
     --FOLDERCOLOR2: hsl(37, 100%, 79%);
     --TABLECOLOR: /* hsl(27, 33%, 87%) */ papayawhip;
     --TABLEHEADCOLOR: hsl(0, 26%, 21%);
+    --BORDER-COLOR: #333;
     /* main size */
     --MAINWIDTH: 85%;
     --MAINWIDTH-S: 100%;
@@ -119,6 +120,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    box-shadow: 0 0 20px -1px var(--BORDER-COLOR);
     z-index: 2;
 }
 
