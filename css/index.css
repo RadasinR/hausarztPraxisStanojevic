@@ -39,6 +39,11 @@
     --SHADOW: 3px 3px 4px #333;
    
 }
+/* Utils */
+
+.nowrap {
+   white-space: nowrap; 
+}
 
 /* Blocks */
 
