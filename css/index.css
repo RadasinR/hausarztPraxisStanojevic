@@ -193,7 +193,9 @@ body {
 
 table {
     border-radius: 7px;
-    padding: var(--PADDING); 
+    padding: var(--PADDING);
+    user-select: none;
+    cursor: pointer;
 }
 
 .headtable {
