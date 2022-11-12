@@ -201,6 +201,7 @@ table {
 .headtable {
     background-color: var(--TABLEHEADCOLOR);
     border: 1px solid var(--BORDERCOLOR);
+    border-radius: 7px;
     color: var(--CLAYWHITE2);
 }
 .headtable:hover {
@@ -210,7 +211,7 @@ table {
     transition-property: filter, color;
 }
 
-td, th, tr, caption {
+td, th, tr {
     border-bottom: groove 2px black;
     padding: var(--PADDING); 
 }
