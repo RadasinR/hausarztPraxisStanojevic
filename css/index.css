@@ -215,6 +215,9 @@ td, th, tr, caption {
     padding: var(--PADDING); 
 }
 
+td:last-child, tr:last-child {
+    border: none;
+}
 
 tr:hover {
     filter: drop-shadow(6px 6px 10px #333);
