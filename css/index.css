@@ -211,7 +211,7 @@ table {
     transition-property: filter, color;
 }
 
-td, th, tr {
+td, tr {
     border-bottom: groove 2px black;
     padding: var(--PADDING); 
 }
